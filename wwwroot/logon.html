@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <title>Sistema de Gerenciamento de Provas</title>
+    
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    
+    
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+
+
+ 
+</head>
+
+<body>
+    
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    
+    <div id="main-wrapper">
+       
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin5">
+                    <!-- Isso é para a alternância da barra lateral visível apenas no celular -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="index.html">
+                        <b class="logo-icon p-l-10"> 
+                            <img src="assets/images/exam.png" width="64" alt="homepage" class="light-logo" />
+                        </b>
+                        <span class="logo-text">
+                            
+                             <img src="assets/images/sgp.png" width="152" alt="homepage" class="light-logo" /> 
+                        </span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Fim Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
+                     
+                        
+                    </ul>
+                        
+                </div>
+            </nav>
+        </header>
+       
+        <aside class="left-sidebar" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Menu de navegação-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav" class="p-t-30">
+                            <li class="sidebar-item"> <a class="sidebar-link  sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-home"></i><span class="hide-menu">Página Principal</span></a></li>
+                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="logon.html" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Efetuar Logon</span></a></li>
+                            <li class="sidebar-item"> <a class="sidebar-link  sidebar-link" href="sobre.html" aria-expanded="false"><i class="mdi mdi-home"></i><span class="hide-menu">Sobre o SGP</span></a></li>
+                    </ul>
+                </nav>
+                <!-- Fim Menu de navegação -->
+            </div>
+            <!-- Fim Sidebar scroll-->
+        </aside>
+      
+        <div class="page-wrapper">
+
+            <div class="container-fluid">
+                <div class="col-4">
+                <div class="row" >
+                    <div class="col" >
+                        <div class="form-group">
+                            <label for="selMatricula" class="control-label">Matricula</label>
+                            <input name="" id="selMatricula" class="form-control"  value="Insira sua Matricula">
+                            <p>  </p>
+                            <label for="inpSenha" class="control-label">Senha</label>
+                            <input name="" id="inpSenha" class="form-control"  value="Insira sua Senha">
+                            <p>  </p>
+                            <label for="selOrigem" class="control-label">Origem</label>
+                            <input name="" id="selOrigem" class="form-control"  value="Insira sua Origem">
+                            <p>  </p>
+                            <input type="button"  name="" id="Logar" class="form-control"  value="Logar">
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- End Container fluid  -->
+
+            
+        </div> <!-- Fim page-wrapper -->
+       
+    </div> <!-- Fim main-wrapper -->
+    
+    
+    <!-- Bootstrap tether Core JavaScript -->
+   
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
+   
+    <!--Menu sidebar -->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
+ 
+   
+   
+
+</body>
+
+</html>
